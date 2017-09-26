@@ -1,0 +1,42 @@
+{% extends "doctorpage.html" %}
+{% block content %}
+<nav class="navbar navbar-default">
+    <div class="container">
+      <ul class="nav navbar-nav navbar-center">
+        <li><a href="/account/doc_view">PROFILE</a></li>
+        <li><a href="/account/doc_view_presc">PRESCRIPTIONS</a><li>
+          <li><a href="/account/report_doc">REPORTS</a></li>
+        </ul>
+      </div>
+    </nav>
+<div class="container-fluid">
+  <div class="row text-left">
+    <div class="col-sm-8">
+      <h1> Patient Details</h1><br>
+    <ul class="list-group">
+
+   <li class="list-group-item"><b>Aadhar Card:</b>{{pat.aadhar_number}}</li>
+   <li class="list-group-item">First Name:{{pat.first_name}}</li>
+   <li class="list-group-item">Second Name:{{pat.last_name}}</li>
+   <li class="list-group-item">Phone Number: {{ pat.phone_number}}</li>
+   <li class="list-group-item">Address:{{pat.address}}</li>
+   <li class="list-group-item">City:{{pat.city}}</li>
+   <li class="list-group-item">State:{{pat.state}}</li>
+   <li class="list-group-item">PIN:{{pat.pincode}}</li>
+   <li class="list-group-item">Blood Type:{{pat.blood_type}}</li>
+   <li class="list-group-item">Emergency Contact:{{pat.emergency_contact}}</li>
+   <br>
+   <br>
+
+ </ul>
+</div>
+    <div class="col-sm-4 text-right">
+    <img src="default-user-image.png" alt="Face" height="250px" width="250px">
+    <br>
+  </div>
+</div>
+
+</div>
+</div>
+
+{% endblock %}

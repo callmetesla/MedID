@@ -1,0 +1,24 @@
+{% extends 'patientpage.html' %}
+{% block content %}
+
+<div class="panel panel-primary">
+    <div class="panel-heading">X-Ray Report</div>
+    <div class="panel-body">
+      {% load static %}
+<img src="{% static "medid/xray.jpg" %}" alt="My image"/>
+    </div>
+  </div>
+  <div class="panel panel-primary">
+    <div class="panel-heading">Report : Dr. Arun : 21/09/17</div>
+    <div class="panel-body">
+      <img src = "report.jpg">
+    </div>
+  </div>
+  <div class="panel panel-primary">
+    <div class="panel-heading">MRI Report</div>
+    <div class="panel-body">
+      <img src = "mri.jpg">
+    </div>
+  </div>
+</div>
+{% endblock %}

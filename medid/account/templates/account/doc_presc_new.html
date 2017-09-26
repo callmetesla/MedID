@@ -1,0 +1,38 @@
+{% extends "doctorpage.html" %}
+{% block content %}
+<br><br>
+    <div class="container">
+    <div class="row">
+    <form method="post" >
+      <div class="form-group">
+      <div class="col-md-3">
+        {% csrf_token %}
+        {{form}}
+        <label for="med">Medicine Name:</label>
+{{form.medicine_text}}      </div>
+    </div>
+      <div class="form-group">
+        <div class="col-md-3">
+        <label for="dosage">Dosage:</label>
+{{form.dosage}}      </div>
+    </div>
+      <div class="form-group">
+        <div class="col-md-3">
+        <label for="quant">Quantity:</label>
+{{form.quantity}}      </div>
+    </div>
+      <div class="form-group">
+        <div class="col-md-3">
+        <label for="consumption">Consumption:</label>
+{{form.consumption}}      </div>
+    </div>
+  </div>
+  <br><br>
+  <button type="submit" class="btn btn-info">SUBMIT</button>
+
+    </form>
+</div>
+  <br>
+  <br>
+  <br>
+{% endblock %}

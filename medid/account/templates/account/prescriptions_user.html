@@ -1,0 +1,38 @@
+{% extends 'patientpage.html' %}
+{% block content %}
+<p>
+
+</p>
+{% for x in shiz %}
+<div class="container-fluid">
+  <div class="list-group">
+  <div class = "list-group-item" style="font-size:20px">Date: {{x.date_of_prescription}}  Doctor:{{x.doctors_name}}<hr>
+  <p>
+<div class="table-responsive">
+   <table class="table">
+      <thead style="font-size:15px">
+         <tr>
+           <th> S no.</th>
+           <th> Medicine</th>
+           <th> Dosage</th>
+           <th> Quantity</th>
+           <th> Consumption</th>
+        </tr>
+      </thead>
+      <tbody style="font-size:12px">
+        <tr>
+          <td> {{x.serialno}} </td>
+          <td> {{x.medicine_text}}</td>
+          <td> {{x.dosage}} </td>
+          <td> {{x.quantity}} </td>
+          <td> {{x.consumption}} </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+</div>
+</div>
+</div>
+{% endfor %}
+{% endblock %}

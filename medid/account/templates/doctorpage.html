@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="enUs">
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .navbar{
+    padding-top: 8px;
+    padding-bottom: 2px;
+    font-size: 10px;
+    letter-spacing: 3px;
+    border-radius: 0;
+    margin-top: 0;
+    border: 0;
+
+    }
+
+
+    .bg1{
+      background-color: white;
+      color: black;
+    }
+
+  footer{
+    background-color:#fff;
+    color: black;
+    padding-top: 20px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+
+  }
+
+
+  body{
+    font: 15px "Montserrat", sans-serif;
+    line-height:1.8;
+  }
+
+  .bottom-footer{
+    border-top: 1px;
+    font-size: 10px;
+    color: black;
+  }
+  .footer-nav li{
+    display: inline;
+    padding: 0px 10px;
+  }
+  .footer-nav a:hover{
+    text-decoration: none;
+  }
+  .footer-nav{
+    text-align: right;
+    list-style: none;
+  }
+
+  .footer-nav a{
+    font-size: 10px;
+    color: black;
+  }
+</style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+          <a href="home.html"><div class="navbar-header" style="font-size:25px;color:white">MedID</div></a>
+        <li><a href="/account/profile_doc">PROFILE</a></li>
+        <li><a href="/account/scan_doc">SCAN ID</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="home.html">SIGN OUT</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  {% block content %}
+  {% endblock %}
+  <footer class="container-fluid">
+    <div class="bottom-footer">
+      <div class="col-md-4"> © Copyright TheProjectTeam.</div>
+      <div class="col-md-7">
+        <ul class="footer-nav">
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+  </div>
+  </footer>
+  </body>
+  </html>
